@@ -1,0 +1,28 @@
+https://chatgpt.com/c/6a05c037-fd38-8323-b8c1-67e109beee82
+
+
+…or create a new repository on the command line
+echo "# hajj_app" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:muhsinashoma/hajj_app.git
+git push -u origin main
+
+---------------------------------------
+
+
+✅ Fix (run this exactly)
+git push --set-upstream origin main
+💡 What this does
+
+It:
+
+Pushes your local main branch to GitHub
+Links it to origin/main
+So next time you can just run:
+git push
+
+
+-------------------------------------------------

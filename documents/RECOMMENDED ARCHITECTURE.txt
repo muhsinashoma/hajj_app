@@ -1,0 +1,48 @@
+
+🚀 RECOMMENDED ARCHITECTURE
+
+Instead of keeping only data/, split into:
+
+lib/
+│
+├── core/
+│   ├── constants/
+│   ├── themes/
+│   ├── network/
+│   └── utils/
+│
+├── models/
+│   └── hajj_package_model.dart
+│
+├── services/
+│   └── api_service.dart
+│
+├── repositories/
+│   └── hajj_repository.dart
+│
+├── cubit/
+│   ├── hajj/
+│   │   ├── hajj_cubit.dart
+│   │   └── hajj_state.dart
+│
+├── views/
+│   ├── home/
+│   ├── package/
+│   └── profile/
+│
+├── widgets/
+│
+└── main.dart
+
+
+🎯 HOW DATA FLOWS
+
+API
+ ↓
+Service
+ ↓
+Repository
+ ↓
+Cubit
+ ↓
+UI

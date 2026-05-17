@@ -1,0 +1,144 @@
+
+showing this error in desktop after running
+
+Hajj App Cubit
+
+DioException [connection error]: The connection errored: The XMLHttpRequest onError callback was called. This typically indicates an error on the network layer. This indicates an error which most likely cannot be solved by the library.
+
+
+
+
+showing this error in mobile after running
+
+
+Hajj App Cubit
+
+DioException [connection timeout]: The request connection took longer than 0:00:30.000000 and it was aborted. To get rid of this exception, try raising the RequestOptions.connectTimeout above the duration of 0:00:30.000000 or improve the response time of the server.
+
+
+------------------------------------------------------------
+
+working url 
+
+http://192.168.32.223:8080/hajj_api/connect_api.php
+
+http://192.168.32.223/hajj_api/
+
+
+----------------------------------------------------
+
+Working
+
+
+
+http://192.168.32.223/hajj_api/connect_api.php
+
+<!-- laragon/www/hajj_api/connect_api.php -->
+{"status":"success","message":"API working"}
+
+
+
+http://localhost/hajj_api/connect_api.php
+
+
+<!-- laragon/www/hajj_api/connect_api.php -->
+{"status":"success","message":"API working"}
+
+
+
+http://127.0.0.1/hajj_api/connect_api.php
+
+
+<!-- laragon/www/hajj_api/connect_api.php -->
+{"status":"success","message":"API working"}
+---------------------------------------------------------------------------------------
+
+🚀 FINAL BEST SETUP (RECOMMENDED)
+Item	Value
+Apache	Port 80
+URL	http://localhost/hajj_api/
+
+Mobile URL	http://PC_IP/hajj_api/
+Firewall	Allow port 80
+API	PHP inside laragon/www/hajj_api
+
+
+------------------------------------------------------------------------------------
+
+
+showing DioException [unknown] : null
+Error: FormatException:Unexpected character (at offset 0)
+
+This error is actually very important:
+
+FormatException: Unexpected character (at offset 0)
+
+It means:
+
+👉 Flutter expected JSON
+👉 But your PHP API is returning NOT valid JSON (or empty / HTML / warning)
+
+-----------------------------------------------------------------------
+
+
+🧠 What this means
+
+✔ Phone → PC connection works
+✔ Apache + Laragon works
+✔ PHP API works
+✔ Dio works
+✔ JSON parsing works
+
+So your previous errors are fully resolved
+
+-------------------------------------------------------
+
+Laragon Full 6.0 220916 php-8.4.15-src [NTS] 192.168.206.168
+
+X
+
+Menu
+
+h?
+
+© Leo K
+
+Failed: Apache httpd-2.4.54-win64-VS16
+
+8080
+
+Reload
+
+My Information
+
+i
+
+X
+
+Service Apache can not start. Reason:
+
+AH00526: Syntax error on line 24 of
+
+C:/laragon/etc/apache2/fcgid.conf:
+
+Wrapper
+
+C:/laragon/bin/php/php-8.4.15-src/php-cgi.exe cannot be accessed: (720002) The system cannot find the file specified.
+
+OK
+
+Cancel
+
+Stop
+
+Web
+
+Database
+
+>>
+
+Terminal
+
+Root
+
+----------------------------------------------------------------
