@@ -1,12 +1,17 @@
 //STEP 7 — MAIN.DART
-//main.dart
+
+//Responsibility
+// Starts app
+// Injects Cubit
+// Loads HomeScreen
+
+//STEP 1
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cubit/hajj/hajj_cubit.dart';
-import 'repositories/hajj_repository.dart';
-import 'services/api_service.dart';
-import 'views/home/home_screen.dart';
+import 'features/hajj/presentation/cubit/hajj/hajj_cubit.dart';
+import 'features/hajj/presentation/pages/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,20 +23,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => HajjCubit(
-        HajjRepository(
-          ApiService(),
-        ),
-      )..fetchPackages(),
-      child: MaterialApp(
+      create: (_) => HajjCubit(), //STEP 2: PROVIDE CUBIT TO APP
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Hajj App',
-        theme: ThemeData(
-          primarySwatch: Colors.green,
-          scaffoldBackgroundColor: Colors.white,
-          useMaterial3: true,
-        ),
-        home: const HomeScreen(),
+        home: HomeScreen(),
       ),
     );
   }
