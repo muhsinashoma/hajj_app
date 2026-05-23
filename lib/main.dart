@@ -5,13 +5,13 @@
 // Injects Cubit
 // Loads HomeScreen
 
-//STEP 1
+//step # 1
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'features/hajj/presentation/cubit/hajj/hajj_cubit.dart';
-import 'features/hajj/presentation/pages/home/home_screen.dart';
+import 'features/hajj/presentation/pages/home/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => HajjCubit(), //STEP 2: PROVIDE CUBIT TO APP
-      child: const MaterialApp(
+      create: (_) => HajjCubit(),
+      child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomeScreen(),
+        home: const MainScreen(),
       ),
     );
   }

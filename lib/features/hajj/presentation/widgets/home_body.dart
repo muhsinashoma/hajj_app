@@ -1,11 +1,13 @@
-//STEP 1 — CREATE BODY WIDGET
+// STEP 4 — HomeBody / HajjPage / UmrahPage / TenDaysPage
 
-//lib/features/hajj/presentation/widgets/home_body.dart
+// lib/features/hajj/presentation/widgets/home_body.dart
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../cubit/hajj/hajj_cubit.dart';
 import '../cubit/hajj/hajj_state.dart';
+
 import 'package:hajj_app/core/constants/app_strings.dart';
 
 class HomeBody extends StatelessWidget {
@@ -20,7 +22,7 @@ class HomeBody extends StatelessWidget {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // ===== WELCOME =====
+            // ===== WELCOME SECTION =====
             Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
@@ -36,7 +38,9 @@ class HomeBody extends StatelessWidget {
                   const SizedBox(height: 8),
                   Text(
                     HajjTexts.welcomeSubtitle(lang),
-                    style: TextStyle(color: Colors.grey.shade600),
+                    style: TextStyle(
+                      color: Colors.grey.shade600,
+                    ),
                   ),
                 ],
               ),
@@ -44,7 +48,7 @@ class HomeBody extends StatelessWidget {
 
             const SizedBox(height: 10),
 
-            // ===== LIST =====
+            // ===== MENU LIST =====
             Expanded(
               child: ListView.builder(
                 padding: const EdgeInsets.all(16),
@@ -54,6 +58,7 @@ class HomeBody extends StatelessWidget {
 
                   return GestureDetector(
                     onTap: () {
+                      // ✅ Cubit-based navigation
                       context.read<HajjCubit>().openPage(index + 1);
                     },
                     child: Container(
@@ -72,8 +77,15 @@ class HomeBody extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Text(item.icon, style: const TextStyle(fontSize: 28)),
+                          // ===== ICON =====
+                          Text(
+                            item.icon,
+                            style: const TextStyle(fontSize: 28),
+                          ),
+
                           const SizedBox(width: 12),
+
+                          // ===== TITLE & SUBTITLE =====
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,8 +112,13 @@ class HomeBody extends StatelessWidget {
                               ],
                             ),
                           ),
-                          const Icon(Icons.arrow_forward_ios,
-                              size: 16, color: Colors.grey),
+
+                          // ===== ARROW =====
+                          const Icon(
+                            Icons.arrow_forward_ios,
+                            size: 16,
+                            color: Colors.grey,
+                          ),
                         ],
                       ),
                     ),

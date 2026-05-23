@@ -21,6 +21,13 @@ class MenuData {
       titleAr: "العمرة",
       icon: "🕌",
     ),
+     // ✅ ADD THIS
+    MenuItemModel(
+      titleEn: "Ibadah in the First 10 Days of Dhul-Hijjah",
+      titleBn: "জিলহজ্জের প্রথম ১০ দিনের ইবাদত",
+      titleAr: "العبادات في الأيام العشر الأولى من ذي الحجة",
+      icon: "🌙",
+    ),
   ];
 
   // BOTTOM MENU

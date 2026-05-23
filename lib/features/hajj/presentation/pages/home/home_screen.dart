@@ -1,20 +1,30 @@
-// // 📱 6. HOME PAGE (UI + API DATA)
+// // // 📱 6. HOME PAGE (UI + API DATA)
 
-// 📱 HOME SCREEN
-//lib/features/hajj/presentation/pages/home/home_screen.dart
+// // 📱 HOME SCREEN
+
+//step # 3 HomeScreen (ONLY Scaffold)
+
+// lib/features/hajj/presentation/pages/home/home_screen.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../cubit/hajj/hajj_cubit.dart';
 import '../../cubit/hajj/hajj_state.dart';
-import '../../widgets/home_body.dart';
+
+//import '../../widgets/home_body.dart';
 import '../../widgets/app_bottom_nav.dart';
 import '../../widgets/language_dropdown.dart';
+
 import 'package:hajj_app/core/constants/app_strings.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  final Widget child;
+
+  const HomeScreen({
+    super.key,
+    required this.child,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +37,7 @@ class HomeScreen extends StatelessWidget {
           child: Scaffold(
             backgroundColor: const Color(0xFFF8F8F8),
 
-            // APP BAR ONLY
-
+            // ✅ APP BAR
             appBar: AppBar(
               backgroundColor: const Color(0xFF0F4C5C),
               centerTitle: true,
@@ -48,10 +57,11 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-            // BODY SEPARATED
-            body: const HomeBody(),
 
-            // BOTTOM NAV SEPARATED
+            // ✅ DYNAMIC BODY
+            body: child,
+
+            // ✅ BOTTOM NAV
             bottomNavigationBar: const AppBottomNav(),
           ),
         );
