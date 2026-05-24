@@ -44,6 +44,29 @@ class HajjTexts {
     }
   }
 
+  // ✅ ADD THIS METHOD
+  static String tapForDetails(String lang) {
+    switch (lang) {
+      case "bn":
+        return "বিস্তারিত দেখুন";
+      case "ar":
+        return "اضغط للتفاصيل";
+      default:
+        return "Tap for details";
+    }
+  }
+
+// ✅ ADD HERE
+  static String hajjGuideTitle(String lang) {
+    switch (lang) {
+      case "bn":
+        return "হজের দিনগুলো";
+      case "ar":
+        return "أيام الحج";
+      default:
+        return "The days of Hajj ";
+    }
+  }
 // ================= LANGUAGE LABELS =================
 
   static String languageBangla(String lang) {
