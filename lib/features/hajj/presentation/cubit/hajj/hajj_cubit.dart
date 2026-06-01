@@ -44,4 +44,13 @@ class HajjCubit extends Cubit<HajjState> {
   void changeLanguage(String lang) {
     emit(state.copyWith(language: lang));
   }
+
+  void openHajjDay(int day) {
+    emit(
+      state.copyWith(
+        selectedDay: day,
+        pageIndex: 4, // Hajj Day Details Page
+      ),
+    );
+  }
 }

@@ -78,7 +78,30 @@ class HajjPage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Card(
                     margin: const EdgeInsets.only(bottom: 12),
+                    // child: ListTile(
+                    //   onTap: () {
+                    //     context.read<HajjCubit>().openHajjDay(
+                    //           index + 8,
+                    //         );
+                    //   },
+                    //   leading: CircleAvatar(
+                    //     backgroundColor: const Color(0xFF0F4C5C),
+                    //     child: Text(
+                    //       "${index + 8}",
+                    //       style: const TextStyle(color: Colors.white),
+                    //     ),
+                    //   ),
+                    //   title: Text(days[index]),
+                    //   subtitle: Text(
+                    //     HajjTexts.tapForDetails(lang),
+                    //   ),
+                    // ),
+
                     child: ListTile(
+                      onTap: () {
+                        context.read<HajjCubit>().openHajjDay(index + 8);
+                      },
+
                       leading: CircleAvatar(
                         backgroundColor: const Color(0xFF0F4C5C),
                         child: Text(
@@ -86,9 +109,74 @@ class HajjPage extends StatelessWidget {
                           style: const TextStyle(color: Colors.white),
                         ),
                       ),
-                      title: Text(days[index]),
-                      subtitle: Text(
-                        HajjTexts.tapForDetails(lang),
+
+                      // 🟢 PRIMARY TEXT
+                      title: Text(
+                        days[index],
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14,
+                        ),
+                      ),
+
+                      // 🟡 SUBTITLE (PRO STYLE)
+                      subtitle: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(height: 4),
+
+                          // Activity summary
+                          // Text(
+                          //   HajjTexts.hajjDaySummary(lang, index + 8),
+                          //   style: const TextStyle(
+                          //     fontWeight: FontWeight.w500,
+                          //     color: Color.fromARGB(221, 144, 135, 135),
+                          //   ),
+                          //   maxLines: 2,
+                          //   overflow: TextOverflow.ellipsis,
+                          // ),
+
+                          Text(
+                            HajjTexts.hajjDaySummary(lang, index + 8),
+                            style: const TextStyle(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12, // 🔻 add smaller font
+                              color: Color.fromARGB(221, 144, 135, 135),
+                            ),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+
+                          const SizedBox(height: 6),
+
+                          // Tap for details (action style)
+                          Row(
+                            children: [
+                              // Text(
+                              //   HajjTexts.tapForDetails(lang),
+                              //   style: const TextStyle(
+                              //     fontSize: 12,
+                              //     color: Colors.blue,
+                              //     fontWeight: FontWeight.w500,
+                              //   ),
+                              // ),
+                              Text(
+                                HajjTexts.tapForDetails(lang),
+                                style: const TextStyle(
+                                  fontSize: 11, // 🔻 smaller
+                                  color: Colors.blue,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              const SizedBox(width: 4),
+                              const Icon(
+                                Icons.arrow_forward_ios,
+                                size: 12,
+                                color: Colors.blue,
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   );

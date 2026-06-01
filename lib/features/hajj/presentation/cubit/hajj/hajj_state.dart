@@ -13,12 +13,16 @@ class HajjState {
   final int pageIndex; // ⭐ NEW
   final String language;
 
+   // NEW
+  final int selectedDay;
+
   HajjState({
     required this.homeItems,
     required this.bottomItems,
     required this.selectedIndex,
     required this.pageIndex,
     required this.language,
+    required this.selectedDay,
   });
 
   factory HajjState.initial() {
@@ -28,6 +32,7 @@ class HajjState {
       selectedIndex: 0,
       pageIndex: 0, // ⭐ HOME DEFAULT
       language: "bn",
+      selectedDay: 8,
     );
   }
 
@@ -37,6 +42,7 @@ class HajjState {
     int? selectedIndex,
     int? pageIndex,
     String? language,
+    int? selectedDay,
   }) {
     return HajjState(
       homeItems: homeItems ?? this.homeItems,
@@ -44,6 +50,7 @@ class HajjState {
       selectedIndex: selectedIndex ?? this.selectedIndex,
       pageIndex: pageIndex ?? this.pageIndex,
       language: language ?? this.language,
+      selectedDay: selectedDay ?? this.selectedDay,
     );
   }
 }

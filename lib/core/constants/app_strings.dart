@@ -67,6 +67,78 @@ class HajjTexts {
         return "The days of Hajj ";
     }
   }
+
+  // static String dayActivitiesTitle(String lang, int day) {
+  //   switch (lang) {
+  //     case "bn":
+  //       return "$day নম্বর দিনের কার্যক্রম";
+  //     case "ar":
+  //       return "أنشطة يوم $day";
+  //     default:
+  //       return "Day $day Activities";
+  //   }
+  // }
+
+  static String dayActivitiesTitle(String lang, int day) {
+    switch (lang) {
+      case "bn":
+        return "$day নম্বর দিনের কার্যক্রম";
+      case "ar":
+        return "أنشطة يوم $day";
+      default:
+        return "Day $day Activities";
+    }
+  }
+
+
+static String hajjDaySummary(String lang, int day) {
+    switch (day) {
+      case 8:
+        return lang == "bn"
+            ? "ইহরাম ও তালবিয়া (মিনা থেকে শুরু)"
+            : lang == "ar"
+                ? "الإحرام والتلبية (البداية من منى)"
+                : "Ihram Preparation with Talbiah (Start from Mina)";
+
+      case 9:
+        return lang == "bn"
+            ? "আরাফার দিন"
+            : lang == "ar"
+                ? "يوم عرفة"
+                : "Arafah Day";
+
+      case 10:
+        return lang == "bn"
+            ? "রামি, কোরবানি, হলক/কসর, তাওয়াফে ইফাদাহ"
+            : lang == "ar"
+                ? "رمي الجمرات، الهدي، الحلق/التقصير، طواف الإفاضة"
+                : "Rami, Hadi, Halq/Qasar, Tawaf-e-Ifadah";
+
+      case 11:
+        return lang == "bn"
+            ? "ছোট জামারাহ"
+            : lang == "ar"
+                ? "الجمرات الصغرى"
+                : "Small Jamarah";
+
+      case 12:
+        return lang == "bn"
+            ? "মাঝারি জামারাহ"
+            : lang == "ar"
+                ? "الجمرات الوسطى"
+                : "Middle Jamarah";
+
+      case 13:
+        return lang == "bn"
+            ? "বড় জামারাহ (মিনা থেকে সমাপ্তি)"
+            : lang == "ar"
+                ? "الجمرات الكبرى (نهاية من منى)"
+                : "Big Jamarah (End from Mina)";
+
+      default:
+        return "";
+    }
+  }
 // ================= LANGUAGE LABELS =================
 
   static String languageBangla(String lang) {
