@@ -90,8 +90,7 @@ class HajjTexts {
     }
   }
 
-
-static String hajjDaySummary(String lang, int day) {
+  static String hajjDaySummary(String lang, int day) {
     switch (day) {
       case 8:
         return lang == "bn"

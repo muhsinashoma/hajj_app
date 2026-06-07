@@ -13,7 +13,7 @@ class HajjState {
   final int pageIndex; // ⭐ NEW
   final String language;
 
-   // NEW
+  // NEW
   final int selectedDay;
 
   HajjState({

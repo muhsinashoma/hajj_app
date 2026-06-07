@@ -78,6 +78,25 @@ class HajjPage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Card(
                     margin: const EdgeInsets.only(bottom: 12),
+                    // child: ListTile(
+                    //   onTap: () {
+                    //     context.read<HajjCubit>().openHajjDay(
+                    //           index + 8,
+                    //         );
+                    //   },
+                    //   leading: CircleAvatar(
+                    //     backgroundColor: const Color(0xFF0F4C5C),
+                    //     child: Text(
+                    //       "${index + 8}",
+                    //       style: const TextStyle(color: Colors.white),
+                    //     ),
+                    //   ),
+                    //   title: Text(days[index]),
+                    //   subtitle: Text(
+                    //     HajjTexts.tapForDetails(lang),
+                    //   ),
+                    // ),
+
                     child: ListTile(
                       onTap: () {
                         context.read<HajjCubit>().openHajjDay(index + 8);
@@ -105,6 +124,18 @@ class HajjPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const SizedBox(height: 4),
+
+                          // Activity summary
+                          // Text(
+                          //   HajjTexts.hajjDaySummary(lang, index + 8),
+                          //   style: const TextStyle(
+                          //     fontWeight: FontWeight.w500,
+                          //     color: Color.fromARGB(221, 144, 135, 135),
+                          //   ),
+                          //   maxLines: 2,
+                          //   overflow: TextOverflow.ellipsis,
+                          // ),
+
                           Text(
                             HajjTexts.hajjDaySummary(lang, index + 8),
                             style: const TextStyle(
@@ -115,9 +146,20 @@ class HajjPage extends StatelessWidget {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
+
                           const SizedBox(height: 6),
+
+                          // Tap for details (action style)
                           Row(
                             children: [
+                              // Text(
+                              //   HajjTexts.tapForDetails(lang),
+                              //   style: const TextStyle(
+                              //     fontSize: 12,
+                              //     color: Colors.blue,
+                              //     fontWeight: FontWeight.w500,
+                              //   ),
+                              // ),
                               Text(
                                 HajjTexts.tapForDetails(lang),
                                 style: const TextStyle(

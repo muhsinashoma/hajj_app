@@ -1,0 +1,19 @@
+https://chatgpt.com/c/6a1d2fb9-3988-8323-af07-bdf635e69c3f
+---------------------------------------------------------------------
+
+
+Flow
+
+HajjPage
+   ↓ tap Day 8
+openHajjDay(8)
+   ↓
+Cubit stores selectedDay = 8
+   ↓
+MainScreen loads HajjDayActivitiesPage
+   ↓
+HajjTexts.hajjDayContent(lang, 8)
+   ↓
+Shows full Day 8 content
+
+For Day 9, Day 10, Day 11, Day 12, and Day 13, simply add more cases in hajjDayContent() and the same page will automatically display the correct activities. This keeps your Cubit simple and avoids creating a separate page for each Hajj day.
