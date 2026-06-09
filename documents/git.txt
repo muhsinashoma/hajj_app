@@ -10,8 +10,15 @@ git branch -M main
 git remote add origin git@github.com:muhsinashoma/hajj_app.git
 git push -u origin main
 
----------------------------------------
+------------------------------------------------
+check origin
 
+PS D:\Flutter-Project\hajj_app> git remote -v 
+origin  git@github.com:muhsinashoma/hajj_app.git (fetch)
+origin  git@github.com:muhsinashoma/hajj_app.git (push)
+PS D:\Flutter-Project\hajj_app> 
+
+------------------------------------------------
 
 ✅ Fix (run this exactly)
 git push --set-upstream origin main

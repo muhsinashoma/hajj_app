@@ -1,6 +1,5 @@
 //lib/core/constants/hajj_day_content.dart
 
-
 class HajjDayContent {
   // ================= BANGLA =================
   static Map<int, Map<String, String>> bangla = {
@@ -26,9 +25,6 @@ class HajjDayContent {
     8: {
       "title": "8th Dhul-Hijjah",
       "content": """
-Days of Hajj
-
-8th Dhul-Hijjah:
 
 Pilgrims performing Hajj Tamattu must enter Ihram from their respective locations within the sacred boundary of Makkah. Before entering Ihram, personal hygiene should be observed (trimming moustache, cutting nails, removing underarm and pubic hair, etc.). It is Sunnah for both men and women to perform Ghusl before Ihram.
 
@@ -52,7 +48,6 @@ D. Engage in Dhikr, Tasbeeh, Tahleel, and Dua. Maintain patience and discipline 
       "content": """
 أيام الحج
 
-٨ ذو الحجة:
 
 يجب على الحجاج المتمتعين الإحرام من أماكنهم داخل حدود الحرم بمكة. قبل الإحرام يجب الاهتمام بالنظافة الشخصية (تقليم الشارب، قص الأظافر، إزالة شعر الإبط والعانة). ويستحب الاغتسال قبل الإحرام للرجال والنساء.
 
@@ -69,8 +64,7 @@ D. Engage in Dhikr, Tasbeeh, Tahleel, and Dua. Maintain patience and discipline 
     },
   };
 
-  
-static Map<int, Map<String, String>> getData(String lang) {
+  static Map<int, Map<String, String>> getData(String lang) {
     switch (lang) {
       case "bn":
         return bangla;
@@ -81,5 +75,3 @@ static Map<int, Map<String, String>> getData(String lang) {
     }
   }
 }
-
-

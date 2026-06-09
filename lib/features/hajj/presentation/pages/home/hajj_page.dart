@@ -18,12 +18,12 @@ class HajjPage extends StatelessWidget {
 
         final days = lang == "bn"
             ? [
-                "৮ জিলহজ্জ",
-                "৯ জিলহজ্জ",
-                "১০ জিলহজ্জ",
-                "১১ জিলহজ্জ",
-                "১২ জিলহজ্জ",
-                "১৩ জিলহজ্জ",
+                "৮ ই জিলহজ্জ",
+                "৯ ই জিলহজ্জ",
+                "১০ ই জিলহজ্জ",
+                "১১ ই জিলহজ্জ",
+                "১২ ই জিলহজ্জ",
+                "১৩ ই জিলহজ্জ",
               ]
             : lang == "ar"
                 ? [
@@ -48,7 +48,11 @@ class HajjPage extends StatelessWidget {
             // ✅ HEADER
             Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(16),
+              // padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 8,
+                vertical: 4,
+              ),
               color: Colors.white,
               child: Row(
                 children: [
@@ -73,12 +77,24 @@ class HajjPage extends StatelessWidget {
             // ✅ CONTENT
             Expanded(
               child: ListView.builder(
-                padding: const EdgeInsets.all(16),
+                // padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 8,
+                  vertical: 4,
+                ),
                 itemCount: days.length,
                 itemBuilder: (context, index) {
+                  //main card
+
                   return Card(
-                    margin: const EdgeInsets.only(bottom: 12),
+                    // margin: const EdgeInsets.only(bottom: 12),
+                    margin: const EdgeInsets.symmetric(vertical: 1),
                     child: ListTile(
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 1,
+                      ),
+
                       onTap: () {
                         context.read<HajjCubit>().openHajjDay(index + 8);
                       },
@@ -138,6 +154,156 @@ class HajjPage extends StatelessWidget {
                       ),
                     ),
                   );
+
+                  //It's working
+
+                  // return Card(
+                  //   margin: const EdgeInsets.symmetric(
+                  //     vertical: 6,
+                  //     horizontal: 2,
+                  //   ),
+                  //   elevation: 1.2,
+                  //   shape: RoundedRectangleBorder(
+                  //     borderRadius: BorderRadius.circular(12),
+                  //   ),
+                  //   child: ListTile(
+                  //     contentPadding: const EdgeInsets.symmetric(
+                  //       horizontal: 14,
+                  //       vertical: 8, // ✅ consistent top-bottom spacing
+                  //     ),
+                  //     onTap: () {
+                  //       context.read<HajjCubit>().openHajjDay(index + 8);
+                  //     },
+                  //     leading: CircleAvatar(
+                  //       radius: 18,
+                  //       backgroundColor: const Color(0xFF0F4C5C),
+                  //       child: Text(
+                  //         "${index + 8}",
+                  //         style: const TextStyle(
+                  //           color: Colors.white,
+                  //           fontWeight: FontWeight.w600,
+                  //           fontSize: 13, // ✅ standard font
+                  //         ),
+                  //       ),
+                  //     ),
+                  //     title: Text(
+                  //       days[index],
+                  //       style: const TextStyle(
+                  //         fontWeight: FontWeight.w600,
+                  //         fontSize: 14, // ✅ standard readable
+                  //         height: 1.2,
+                  //       ),
+                  //     ),
+                  //     subtitle: Padding(
+                  //       padding: const EdgeInsets.only(top: 4),
+                  //       child: Row(
+                  //         children: [
+                  //           Expanded(
+                  //             child: Text(
+                  //               HajjTexts.hajjDaySummary(lang, index + 8),
+                  //               style: const TextStyle(
+                  //                 fontSize: 12, // ✅ standard font
+                  //                 color: Colors.black54,
+                  //                 height: 1.3,
+                  //               ),
+                  //               maxLines: 1,
+                  //               overflow: TextOverflow.ellipsis,
+                  //             ),
+                  //           ),
+                  //           const SizedBox(width: 8),
+                  //           Text(
+                  //             HajjTexts.tapForDetails(lang),
+                  //             style: const TextStyle(
+                  //               fontSize: 11,
+                  //               color: Colors.blue,
+                  //               fontWeight: FontWeight.w500,
+                  //             ),
+                  //           ),
+                  //           const SizedBox(width: 4),
+                  //           const Icon(
+                  //             Icons.arrow_forward_ios,
+                  //             size: 12,
+                  //             color: Colors.blue,
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // );
+
+                  // return Card(
+                  //   margin: const EdgeInsets.symmetric(
+                  //       vertical: 3), // ✅ reduced gap
+                  //   elevation: 1,
+                  //   shape: RoundedRectangleBorder(
+                  //     borderRadius: BorderRadius.circular(10),
+                  //   ),
+                  //   child: ListTile(
+                  //     dense: true,
+                  //     visualDensity: const VisualDensity(
+                  //       vertical: -1, // ✅ reduces height slightly (important)
+                  //     ),
+                  //     contentPadding: const EdgeInsets.symmetric(
+                  //       horizontal: 14,
+                  //       vertical: 4, // ✅ compact height
+                  //     ),
+                  //     onTap: () {
+                  //       context.read<HajjCubit>().openHajjDay(index + 8);
+                  //     },
+                  //     leading: CircleAvatar(
+                  //       radius: 16, // ✅ slightly smaller but readable
+                  //       backgroundColor: const Color(0xFF0F4C5C),
+                  //       child: Text(
+                  //         "${index + 8}",
+                  //         style: const TextStyle(
+                  //           color: Colors.white,
+                  //           fontWeight: FontWeight.bold,
+                  //           fontSize: 12,
+                  //         ),
+                  //       ),
+                  //     ),
+                  //     title: Text(
+                  //       days[index],
+                  //       style: const TextStyle(
+                  //         fontWeight: FontWeight.w600,
+                  //         fontSize: 13,
+                  //       ),
+                  //     ),
+                  //     subtitle: Padding(
+                  //       padding: const EdgeInsets.only(top: 2),
+                  //       child: Row(
+                  //         children: [
+                  //           Expanded(
+                  //             child: Text(
+                  //               HajjTexts.hajjDaySummary(lang, index + 8),
+                  //               style: const TextStyle(
+                  //                 fontSize: 11.5,
+                  //                 color: Colors.black54,
+                  //               ),
+                  //               maxLines: 1,
+                  //               overflow: TextOverflow.ellipsis,
+                  //             ),
+                  //           ),
+                  //           const SizedBox(width: 6),
+                  //           Text(
+                  //             HajjTexts.tapForDetails(lang),
+                  //             style: const TextStyle(
+                  //               fontSize: 10,
+                  //               color: Colors.blue,
+                  //               fontWeight: FontWeight.w500,
+                  //             ),
+                  //           ),
+                  //           const SizedBox(width: 3),
+                  //           const Icon(
+                  //             Icons.arrow_forward_ios,
+                  //             size: 11,
+                  //             color: Colors.blue,
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // );
                 },
               ),
             ),

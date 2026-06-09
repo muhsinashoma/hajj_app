@@ -1,0 +1,58 @@
+
+
+The visible Bangla section in the image is titled “হজ্জের দিনওয়ারী কার্যক্রম” (Day-wise Hajj Activities).
+
+English Translation
+Day-wise Hajj Activities
+8th Dhul-Hijjah
+Enter into Ihram from Makkah or your place of residence within the Haram area.
+Travel to Mina and stay there.
+9th Dhul-Hijjah
+Proceed to Arafat and remain there. (From Dhuhr until sunset).
+Night of 9th Dhul-Hijjah (10th Dhul-Hijjah begins)
+Arrive at Muzdalifah and stay there. (From sunset until Fajr).
+10th Dhul-Hijjah
+
+In the morning, arrive at Mina and perform the activities of Mina:
+
+Throw seven pebbles at Jamrat al-Aqabah (the largest pillar).
+Perform the sacrifice (Qurbani/Hady).
+Exit the state of Ihram by shaving the head or trimming the hair.
+Go to Makkah and perform Tawaf al-Ifadah (Farz Tawaf).
+Quran References Mentioned
+Throwing pebbles at Jamrah: (2:196)
+Sacrifice (Qurbani): (22:28–29)
+Shaving/trimming hair and exiting Ihram: (2:196)
+Tawaf al-Ifadah: (22:29)
+
+If you want, I can also 
+translate the upper paragraph above this section and 
+convert the entire page into structured Bangla, English, and Arabic content for your Flutter Hajj app.
+
+bangali language
+
+ছবিতে দৃশ্যমান "হজ্জের দিনওয়ারী কার্যক্রম" অংশটি পরিষ্কার বাংলায় নিচে লিখে দিলাম:
+
+হজ্জের দিনওয়ারী কার্যক্রম
+
+৮ই জিলহজ্জ
+ইহরাম অবস্থায় মক্কা বা হারাম এলাকার নিজ অবস্থান থেকে মিনার উদ্দেশ্যে রওনা হওয়া।
+মিনায় গমন ও অবস্থান।
+৯ই জিলহজ্জ
+আরাফাতে গমন ও অবস্থান। (সূর্যাস্ত পর্যন্ত)
+৯ই জিলহজ্জের রাত (১০ই জিলহজ্জের রাত)
+মুযদালিফায় আগমন ও অবস্থান। (সূর্যাস্ত থেকে ফজর পর্যন্ত)
+১০ই জিলহজ্জ
+
+সকালে মিনায় আগমন করে নিম্নোক্ত কার্যক্রম সম্পাদন করতে হবে:
+
+১. জামরাতুল আকাবায় (বড় শয়তান) সাতটি কঙ্কর নিক্ষেপ (রমী) করা।
+
+২. হাদিয়া (কুরবানী) সম্পন্ন করা।
+
+৩. মাথা মুন্ডন অথবা চুল ছোট করে ইহরামমুক্ত হওয়া।
+
+৪. মক্কায় গিয়ে ফরয তাওয়াফ (তাওয়াফে ইফাদাহ) সম্পাদন করা।
+
+আপনি যদি 
+Flutter অ্যাপের জন্য ব্যবহার করতে চান, তাহলে আমি এটি আরও সুন্দরভাবে Day 8, Day 9, Day 10 অনুযায়ী JSON/Map format-এ সাজিয়ে দিতে পারি।
