@@ -1,21 +1,123 @@
 //lib/core/constants/app_strings.dart
+
+
+
+
+class AppPages {
+  static const int home = 0;
+  static const int hajj = 1;
+  static const int umrah = 2;
+  static const int tenDays = 3;
+  static const int hajjDay = 4;
+}
+
 class HajjTexts {
   static const String bn = "bn";
   static const String ar = "ar";
   static const String en = "en";
 
   // ================= APP TITLE =================
-  static String appTitle(String lang) {
+  // static String appTitle(String lang) {
+  //   switch (lang) {
+  //     case bn:
+  //       return "হজ্জের দিনওয়ারী কার্যক্রম";
+  //     case ar:
+  //       return "أنشطة الحج اليومية";
+  //     default:
+  //       return "Day-wise Hajj Activities";
+  //   }
+  // }
+
+
+
+  static String hajjTitle(String lang) {
     switch (lang) {
       case bn:
-        return "হজ্জের দিনওয়ারী কার্যক্রম";
+        return "হজ্জ";
       case ar:
-        return "أنشطة الحج اليومية";
+        return "الحج";
       default:
-        return "Day-wise Hajj Activities";
+        return "Hajj";
     }
   }
 
+static String umrahTitle(String lang) {
+    switch (lang) {
+      case bn:
+        return "উমরাহ";
+      case ar:
+        return "العمرة";
+      default:
+        return "Umrah";
+    }
+  }
+
+  static String tenDaysTitle(String lang) {
+    switch (lang) {
+      case bn:
+        return "যিলহজ্জের প্রথম ১০ দিন";
+      case ar:
+        return "العشر الأوائل من ذي الحجة";
+      default:
+        return "First 10 Days of Dhul Hijjah";
+    }
+  }
+
+
+
+// static String getAppTitleByPage(String lang, int pageIndex) {
+//     switch (pageIndex) {
+//       case 1:
+//         return umrahTitle(lang);
+
+//       case 2:
+//         return tenDaysTitle(lang);
+
+//       default:
+//         return hajjTitle(lang);
+//     }
+//   }
+
+// static String getAppTitleByPage(String lang, int pageIndex) {
+//     switch (pageIndex) {
+//       case 1:
+//         return hajjTitle(lang);
+
+//       case 2:
+//         return umrahTitle(lang);
+
+//       case 3:
+//         return tenDaysTitle(lang);
+
+//       case 4:
+//         return hajjGuideTitle(lang);
+
+//       default:
+//         return "";
+//     }
+//   }
+
+
+
+
+static String getAppTitleByPage(String lang, int pageIndex) {
+    switch (pageIndex) {
+      case AppPages.hajj:
+        return hajjTitle(lang);
+
+      case AppPages.umrah:
+        return umrahTitle(lang);
+
+      case AppPages.tenDays:
+        return tenDaysTitle(lang);
+
+      case AppPages.hajjDay:
+        return hajjGuideTitle(lang);
+
+      default:
+        return "";
+    }
+  }
   // ================= WELCOME TITLE =================
   static String welcomeTitle(String lang) {
     switch (lang) {
@@ -66,15 +168,26 @@ class HajjTexts {
 
   // ================= HAJJ GUIDE TITLE =================
   static String hajjGuideTitle(String lang) {
-    switch (lang) {
+    // switch (lang) {
+    //   case bn:
+    //     return "হজের দিনগুলো";
+    //   case ar:
+    //     return "أيام الحج";
+    //   default:
+    //     return "The days of Hajj";
+    // }
+
+     switch (lang) {
       case bn:
-        return "হজের দিনগুলো";
+        return "হজ্জের দিনওয়ারী কার্যক্রম";
       case ar:
-        return "أيام الحج";
+        return "أنشطة الحج اليومية";
       default:
-        return "The days of Hajj";
+        return "Day-wise Hajj Activities";
     }
   }
+
+
 
   // ================= DAY TITLE =================
   static String dayActivitiesTitle(String lang, int day) {

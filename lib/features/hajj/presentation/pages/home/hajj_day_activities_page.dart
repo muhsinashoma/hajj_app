@@ -27,7 +27,6 @@ class HajjDayActivitiesPage extends StatelessWidget {
         }
 
         // ✅ GET DATA FROM CONSTANT FILE
-       
 
         final dayData = HajjDayContent.getData(lang)[day];
 
