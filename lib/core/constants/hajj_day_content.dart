@@ -26,42 +26,59 @@ class HajjDayContent {
       "title": "8th Dhul-Hijjah",
       "content": """
 
-Pilgrims performing Hajj Tamattu must enter Ihram from their respective locations within the sacred boundary of Makkah. Before entering Ihram, personal hygiene should be observed (trimming moustache, cutting nails, removing underarm and pubic hair, etc.). It is Sunnah for both men and women to perform Ghusl before Ihram.
+Pilgrims performing Hajj Tamattu must enter Ihram from their respective locations within the sacred boundary of Makkah. Before entering Ihram, personal hygiene should be observed (trimming moustache, cutting nails, removing underarm and pubic hair, etc.). It is Sunnah for both men and women to perform Ghusl before entering Ihram.
 
-After Ghusl, men must wear two pieces of unstitched cloth. One should cover from navel to knees (Fard), and the other should be wrapped over the shoulders. Women may wear any modest and clean attire suitable for Ihram.
+After Ghusl, men should wear two unstitched pieces of cloth. One piece covers from navel to knees (obligatory), and the other is wrapped over the shoulders. Women may wear any modest and clean dress suitable for Ihram.
 
-A. At the time of intention, say: “Labbayka Allahumma Hajjan.” Then begin Talbiyah, which continues until Rami of Jamrat al-Aqabah on the 10th Dhul-Hijjah.
+A. At the time of intention, say: “Labbayka Allahumma Hajjan.” Then begin Talbiyah, which should continue until the Rami of Jamrat al-Aqabah on the 10th of Dhul-Hijjah.
 
-B. After Fajr, proceed to Mina while reciting Talbiyah. Carry light essentials in a small backpack.
+B. After Fajr prayer, all pilgrims proceed to Mina while continuing Talbiyah. Carry a small backpack with essential items for Mina, Arafat, and Muzdalifah (light packing makes movement easier during Hajj days).
 
-C. In Mina, perform Dhuhr, Asr, Maghrib, Isha, and Fajr (9th Dhul-Hijjah) with Qasr and in congregation, and stay overnight.
+C. In Mina, perform Dhuhr, Asr, Maghrib, Isha, and Fajr (9th Dhul-Hijjah) prayers in congregation with Qasr, and stay overnight in Mina. This is a Sunnah of Hajj.
 
-D. Engage in Dhikr, Tasbeeh, Tahleel, and Dua. Maintain patience and discipline throughout the journey.
+D. Mina is a blessed and historic place filled with the spirit of sacrifice. Engage in Dhikr, Tasbeeh, Tahleel, and Du’a as taught by the Prophet ﷺ. Be patient and grateful to Allah for reaching this stage. Help fellow pilgrims and cooperate with the group leader. Medical facilities are available nearby if needed. If time permits on the 12th or 13th, offer prayer at Masjid al-Khayf.
 """
     },
   };
 
   // ================= ARABIC =================
   static Map<int, Map<String, String>> arabic = {
+//     8: {
+//       "title": "٨ ذو الحجة",
+//       "content": """
+// أيام الحج
+
+// يجب على الحجاج المتمتعين الإحرام من أماكنهم داخل حدود الحرم بمكة. قبل الإحرام يجب الاهتمام بالنظافة الشخصية (تقليم الشارب، قص الأظافر، إزالة شعر الإبط والعانة). ويستحب الاغتسال قبل الإحرام للرجال والنساء.
+
+// بعد الاغتسال، يرتدي الرجال إزاراً ورداءً غير مخيطين. يغطي الإزار ما بين السرة والركبة (فرض)، ويرتدي الرداء على الكتفين. وتلبس النساء لباساً محتشماً وطاهراً مناسباً للإحرام.
+
+// أ. عند نية الحج يُقال: "لبيك اللهم حجاً". ثم تبدأ التلبية وتستمر حتى رمي جمرة العقبة يوم 10 ذي الحجة.
+
+// ب. بعد صلاة الفجر، يتوجه الحجاج إلى منى مع تلاوة التلبية، ويحملون احتياجات خفيفة.
+
+// ج. في منى، تُصلى الصلوات (الظهر، العصر، المغرب، العشاء، وفجر اليوم التاسع) قصراً وجماعة، ويُبيت فيها الحجاج.
+
+// د. يُكثر من الذكر والتسبيح والتهليل والدعاء، مع الصبر والانضباط طوال الرحلة.
+// """
+//     },
+
     8: {
       "title": "٨ ذو الحجة",
       "content": """
-أيام الحج
 
+يجب على الحجاج المتمتعين الإحرام من أماكنهم داخل حدود الحرم في مكة. وقبل الإحرام ينبغي الاهتمام بالنظافة الشخصية مثل تقليم الشارب، وقص الأظافر، وإزالة شعر الإبط والعانة. ويُستحب الاغتسال قبل الإحرام للرجال والنساء.
 
-يجب على الحجاج المتمتعين الإحرام من أماكنهم داخل حدود الحرم بمكة. قبل الإحرام يجب الاهتمام بالنظافة الشخصية (تقليم الشارب، قص الأظافر، إزالة شعر الإبط والعانة). ويستحب الاغتسال قبل الإحرام للرجال والنساء.
+بعد الاغتسال يرتدي الرجال إزاراً ورداءً غير مخيطين، يغطي الإزار ما بين السرة والركبة (واجب)، ويُلقى الرداء على الكتفين. وتلبس النساء لباساً ساتراً ومحتشماً وطاهراً مناسباً للإحرام.
 
-بعد الاغتسال، يرتدي الرجال إزاراً ورداءً غير مخيطين. يغطي الإزار ما بين السرة والركبة (فرض)، ويرتدي الرداء على الكتفين. وتلبس النساء لباساً محتشماً وطاهراً مناسباً للإحرام.
+أ. عند نية الحج يُقال: «لبيك اللهم حجاً». ثم تبدأ التلبية وتستمر حتى رمي جمرة العقبة يوم 10 ذو الحجة.
 
-أ. عند نية الحج يُقال: "لبيك اللهم حجاً". ثم تبدأ التلبية وتستمر حتى رمي جمرة العقبة يوم 10 ذي الحجة.
+ب. بعد صلاة الفجر يتوجه الحجاج إلى منى مع استمرار التلبية، ويحملون أمتعة خفيفة للاحتياجات الضرورية خلال أيام منى وعرفة ومزدلفة.
 
-ب. بعد صلاة الفجر، يتوجه الحجاج إلى منى مع تلاوة التلبية، ويحملون احتياجات خفيفة.
+ج. في منى تُصلى الصلوات (الظهر، العصر، المغرب، العشاء، وفجر اليوم التاسع) قصراً وجماعة، ويبيت الحجاج فيها. وهذا من سنن الحج.
 
-ج. في منى، تُصلى الصلوات (الظهر، العصر، المغرب، العشاء، وفجر اليوم التاسع) قصراً وجماعة، ويُبيت فيها الحجاج.
-
-د. يُكثر من الذكر والتسبيح والتهليل والدعاء، مع الصبر والانضباط طوال الرحلة.
+د. تُعمَر منى بالذكر والتسبيح والتهليل والدعاء، مع التحلي بالصبر والالتزام. وينبغي شكر الله تعالى على هذه النعمة، ومساعدة الحجاج الآخرين، والتعاون مع أمير الحملة. وتتوافر الخدمات الطبية عند الحاجة، وإذا تيسر الوقت يُستحب الصلاة في مسجد الخيف يومي 12 أو 13 من ذي الحجة.
 """
-    },
+    }
   };
 
   static Map<int, Map<String, String>> getData(String lang) {
