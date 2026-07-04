@@ -14,16 +14,6 @@ class HajjTexts {
   static const String en = "en";
 
   // ================= APP TITLE =================
-  // static String appTitle(String lang) {
-  //   switch (lang) {
-  //     case bn:
-  //       return "হজ্জের দিনওয়ারী কার্যক্রম";
-  //     case ar:
-  //       return "أنشطة الحج اليومية";
-  //     default:
-  //       return "Day-wise Hajj Activities";
-  //   }
-  // }
 
   static String hajjTitle(String lang) {
     switch (lang) {
