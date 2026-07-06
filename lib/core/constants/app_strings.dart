@@ -164,77 +164,137 @@ class HajjTexts {
   // ================= DAY SUMMARY =================
   static String hajjDaySummary(String lang, int day) {
     switch (day) {
+      // case 8:
+      //   switch (lang) {
+      //     case bn:
+      //       return "১. ইহরাম অবস্থায় মক্কা বা হারাম এলাকার নিজ অবস্থান থেকে মিনার উদ্দেশ্যে রওনা হওয়া। ২. মিনায় গমন ও অবস্থান।";
+      //     case ar:
+      //       return "١. في حالة الإحرام، توجه إلى منى من موقعك داخل مكة المكرمة أو منطقة الحرم. ٢. سافر إلى منى وأقم هناك.";
+      //     default:
+      //       return "1. In the state of Ihram, proceed towards Mina from your location within Makkah or the Haram area. 2.Travel to Mina and stay there.";
+      //   }
+
       case 8:
         switch (lang) {
           case bn:
-            return "১. ইহরাম অবস্থায় মক্কা বা হারাম এলাকার নিজ অবস্থান থেকে মিনার উদ্দেশ্যে রওনা হওয়া। ২. মিনায় গমন ও অবস্থান।";
+            return "ইয়াওমুত তারবিয়াহ (يوم التروية) — আভিধানিক অর্থ: পানি সংগ্রহ করা; এটি মিনার উদ্দেশ্যে যাত্রার প্রস্তুতির দিন।";
           case ar:
-            return "١. في حالة الإحرام، توجه إلى منى من موقعك داخل مكة المكرمة أو منطقة الحرم. ٢. سافر إلى منى وأقم هناك.";
+            return "يوم التروية — المعنى اللغوي: التزوّد بالماء، وهو يوم الاستعداد للانطلاق إلى منى.";
           default:
-            return "1. In the state of Ihram, proceed towards Mina from your location within Makkah or the Haram area. 2.Travel to Mina and stay there.";
+            return "Day of Tarwiyah — Literal Meaning: Provisioning Water; a day of preparation for the journey to Mina.";
         }
+
+      // case 9:
+      //   switch (lang) {
+      //     case bn:
+      //       return "৯ই জিলহজ্জ: আরাফাতে গমন ও সূর্যাস্ত পর্যন্ত অবস্থান (সূরা বাকারা ২: ১৯৮-১৯৯)।\n"
+      //           "৯ই জিলহজ্জ দিবাগত রাত (১০ই জিলহজ্জ): মুযদালিফায় আগমন ও অবস্থান (সূরা বাকারা ২: ১৯৮-১৯৯)।";
+
+      //     case ar:
+      //       return "٩ ذو الحجة: الوقوف بعرفة والإقامة فيها حتى غروب الشمس (سورة البقرة ٢: ١٩٨-١٩٩).\n"
+      //           "ليلة ٩ ذو الحجة (١٠ ذو الحجة): المبيت في مزدلفة.";
+
+      //     default:
+      //       return "9th Dhul Hijjah: Standing at Arafah and staying until sunset (Surah Al-Baqarah 2: 198–199).\n"
+      //           "Night of 9th Dhul Hijjah (10th Dhul Hijjah): Arrival and stay at Muzdalifah.";
+      //   }
 
       case 9:
         switch (lang) {
           case bn:
-            return "৯ই জিলহজ্জ: আরাফাতে গমন ও সূর্যাস্ত পর্যন্ত অবস্থান (সূরা বাকারা ২: ১৯৮-১৯৯)।\n"
-                "৯ই জিলহজ্জ দিবাগত রাত (১০ই জিলহজ্জ): মুযদালিফায় আগমন ও অবস্থান (সূরা বাকারা ২: ১৯৮-১৯৯)।";
-
+            return "ইয়াওমু আরাফাহ (يوم عرفة) — আভিধানিক অর্থ: জানা, চিনতে পারা ও উপলব্ধি করা; এটি হজ্জের সর্বাধিক গুরুত্বপূর্ণ দিন।";
           case ar:
-            return "٩ ذو الحجة: الوقوف بعرفة والإقامة فيها حتى غروب الشمس (سورة البقرة ٢: ١٩٨-١٩٩).\n"
-                "ليلة ٩ ذو الحجة (١٠ ذو الحجة): المبيت في مزدلفة.";
-
+            return "يوم عرفة — المعنى اللغوي: المعرفة والإدراك، وهو أعظم أيام الحج.";
           default:
-            return "9th Dhul Hijjah: Standing at Arafah and staying until sunset (Surah Al-Baqarah 2: 198–199).\n"
-                "Night of 9th Dhul Hijjah (10th Dhul Hijjah): Arrival and stay at Muzdalifah.";
+            return "Day of Arafah — Literal Meaning: Knowing, Recognizing, and Realizing; it is the most important day of Hajj.";
         }
+
+      // case 10:
+      //   switch (lang) {
+      //     case bn:
+      //       return "সকালে মিনায় আগমন এবং মিনার কার্যক্রম (১.রমি, ২.হাদিয়া (কুরবানী) ৩.হলক/কসর ৪.ফরয তাওয়াফ/তাওয়াফে ইফাদাহ ৫.সাফা-মারওয়া সা'য়ী করা ৬.মিনাতে ফিরে অবস্থান ও আল্লাহর যিকির/স্মরণের মাধ্যমে হজ্জের সফলতা লাভের প্রচেষ্টা করা) (সূরা বাকারা ২: ২০০)।";
+
+      //     case ar:
+      //       return "الوصول إلى منى صباحًا وأعمال منى: رمي الجمرات، الهدي، الحلق/التقصير، طواف الإفاضة (سورة البقرة ٢: ٢٠٠).";
+
+      //     default:
+      //       return "Arrival at Mina in the morning and rituals of Mina: Rami (stoning), Hadi (sacrifice), Halq/Qasar (shaving/cutting hair), Tawaf-e-Ifadah (Surah Al-Baqarah 2: 200).";
+      //   }
 
       case 10:
         switch (lang) {
           case bn:
-            return "সকালে মিনায় আগমন এবং মিনার কার্যক্রম (১.রমি, ২.হাদিয়া (কুরবানী) ৩.হলক/কসর ৪.ফরয তাওয়াফ/তাওয়াফে ইফাদাহ ৫.সাফা-মারওয়া সা'য়ী করা ৬.মিনাতে ফিরে অবস্থান ও আল্লাহর যিকির/স্মরণের মাধ্যমে হজ্জের সফলতা লাভের প্রচেষ্টা করা) (সূরা বাকারা ২: ২০০)।";
-
+            return "ইয়াওমুন নহর (يوم النحر) — আভিধানিক অর্থ: কুরবানি বা জবাইয়ের দিন; এ দিন ঈদুল আযহার প্রধান কার্যক্রম সম্পন্ন করা হয়।";
           case ar:
-            return "الوصول إلى منى صباحًا وأعمال منى: رمي الجمرات، الهدي، الحلق/التقصير، طواف الإفاضة (سورة البقرة ٢: ٢٠٠).";
-
+            return "يوم النحر — المعنى اللغوي: يوم الذبح والتضحية، وهو يوم عيد الأضحى.";
           default:
-            return "Arrival at Mina in the morning and rituals of Mina: Rami (stoning), Hadi (sacrifice), Halq/Qasar (shaving/cutting hair), Tawaf-e-Ifadah (Surah Al-Baqarah 2: 200).";
+            return "Day of Sacrifice (Yawm al-Nahr) — Literal Meaning: The Day of Slaughter and Sacrifice; it is the day of Eid al-Adha.";
         }
+
+      // case 11:
+      //   switch (lang) {
+      //     case bn:
+      //       return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং ছোট জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
+
+      //     case ar:
+      //       return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الصغرى (سورة البقرة ٢: ٢٠٣)";
+
+      //     default:
+      //       return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Small Jamarah (Surah Al-Baqarah 2: 203)";
+      //   }
 
       case 11:
         switch (lang) {
           case bn:
-            return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং ছোট জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
-
+            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
           case ar:
-            return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الصغرى (سورة البقرة ٢: ٢٠٣)";
-
+            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي تلي يوم النحر.";
           default:
-            return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Small Jamarah (Surah Al-Baqarah 2: 203)";
+            return "Days of Tashreeq — Literal Meaning: Drying meat in the sun; the days following the Day of Sacrifice.";
         }
+
+      // case 12:
+      //   switch (lang) {
+      //     case bn:
+      //       return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং মাঝারি জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
+
+      //     case ar:
+      //       return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الوسطى (سورة البقرة ٢: ٢٠٣)";
+
+      //     default:
+      //       return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Middle Jamarah (Surah Al-Baqarah 2: 203)";
+      //   }
 
       case 12:
         switch (lang) {
           case bn:
-            return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং মাঝারি জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
-
+            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
           case ar:
-            return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الوسطى (سورة البقرة ٢: ٢٠٣)";
-
+            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي تلي يوم النحر.";
           default:
-            return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Middle Jamarah (Surah Al-Baqarah 2: 203)";
+            return "Days of Tashreeq — Literal Meaning: Drying meat in the sun; the days following the Day of Sacrifice.";
         }
+
+      // case 13:
+      //   switch (lang) {
+      //     case bn:
+      //       return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং বড় জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
+
+      //     case ar:
+      //       return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الكبرى (نهاية أيام منى) (سورة البقرة ٢: ٢٠٣)";
+
+      //     default:
+      //       return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Big Jamarah (end of days in Mina) (Surah Al-Baqarah 2: 203)";
+      //   }
 
       case 13:
         switch (lang) {
           case bn:
-            return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং বড় জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
-
+            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
           case ar:
-            return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الكبرى (نهاية أيام منى) (سورة البقرة ٢: ٢٠٣)";
-
+            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي تلي يوم النحر.";
           default:
-            return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Big Jamarah (end of days in Mina) (Surah Al-Baqarah 2: 203)";
+            return "Days of Tashreeq — Literal Meaning: Drying meat in the sun; the days following the Day of Sacrifice.";
         }
 
       default:
