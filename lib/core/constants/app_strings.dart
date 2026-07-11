@@ -177,11 +177,13 @@ class HajjTexts {
       case 8:
         switch (lang) {
           case bn:
-            return "ইয়াওমুত তারবিয়াহ (يوم التروية) — আভিধানিক অর্থ: পানি সংগ্রহ করা; এটি মিনার উদ্দেশ্যে যাত্রার প্রস্তুতির দিন।";
+            return "ইয়াওমুত তারবিয়াহ (يوم التروية) — আভিধানিক অর্থ: পানি সংগ্রহ করা; মিনার উদ্দেশ্যে যাত্রার প্রস্তুতির দিন।";
+
           case ar:
             return "يوم التروية — المعنى اللغوي: التزوّد بالماء، وهو يوم الاستعداد للانطلاق إلى منى.";
+
           default:
-            return "Day of Tarwiyah — Literal Meaning: Provisioning Water; a day of preparation for the journey to Mina.";
+            return "Day of Tarwiyah — Literal Meaning: Provisioning Water; the day of preparation for the journey to Mina.";
         }
 
       // case 9:
@@ -246,11 +248,13 @@ class HajjTexts {
       case 11:
         switch (lang) {
           case bn:
-            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
+            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
+
           case ar:
-            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي تلي يوم النحر.";
+            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي كان يُجفف فيها لحم الأضاحي ويُحفظ.";
+
           default:
-            return "Days of Tashreeq — Literal Meaning: Drying meat in the sun; the days following the Day of Sacrifice.";
+            return "Ayyam al-Tashreeq (Days of Tashreeq) — Literal Meaning: Drying meat in the sun; the days when sacrificial meat was dried and preserved.";
         }
 
       // case 12:
@@ -268,11 +272,13 @@ class HajjTexts {
       case 12:
         switch (lang) {
           case bn:
-            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
+            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
+
           case ar:
-            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي تلي يوم النحر.";
+            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي كان يُجفف فيها لحم الأضاحي ويُحفظ.";
+
           default:
-            return "Days of Tashreeq — Literal Meaning: Drying meat in the sun; the days following the Day of Sacrifice.";
+            return "Ayyam al-Tashreeq (Days of Tashreeq) — Literal Meaning: Drying meat in the sun; the days when sacrificial meat was dried and preserved.";
         }
 
       // case 13:
@@ -290,11 +296,13 @@ class HajjTexts {
       case 13:
         switch (lang) {
           case bn:
-            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
+            return "আইয়্যামুত তাশরীক (أيام التشريق) — আভিধানিক অর্থ: রোদে শুকানো; কুরবানির মাংস রোদে শুকিয়ে সংরক্ষণের দিনসমূহ।";
+
           case ar:
-            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي تلي يوم النحر.";
+            return "أيام التشريق — المعنى اللغوي: تجفيف اللحم في الشمس، وهي الأيام التي كان يُجفف فيها لحم الأضاحي ويُحفظ.";
+
           default:
-            return "Days of Tashreeq — Literal Meaning: Drying meat in the sun; the days following the Day of Sacrifice.";
+            return "Ayyam al-Tashreeq (Days of Tashreeq) — Literal Meaning: Drying meat in the sun; the days when sacrificial meat was dried and preserved.";
         }
 
       default:
