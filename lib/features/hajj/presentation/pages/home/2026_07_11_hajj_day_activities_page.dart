@@ -66,72 +66,30 @@ class HajjDayActivitiesPage extends StatelessWidget {
               ),
 
               // ✅ CONTENT
-
               Expanded(
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.all(16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      /// Day Title
+                      // 🟢 DAY TITLE
                       Text(
                         dayData?["title"] ?? "",
                         style: const TextStyle(
-                          fontSize: 24,
+                          fontSize: 22,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
 
-                      const SizedBox(height: 6),
+                      const SizedBox(height: 16),
 
-                      /// Subtitle
-                      if (dayData?["subtitle"] != null)
-                        Text(
-                          dayData!["subtitle"],
-                          style: const TextStyle(
-                            fontSize: 16,
-                            color: Colors.grey,
-                            fontStyle: FontStyle.italic,
-                          ),
+                      // 🟡 DAY CONTENT
+                      Text(
+                        dayData?["content"] ?? "",
+                        style: const TextStyle(
+                          fontSize: 16,
+                          height: 1.7,
                         ),
-
-                      const SizedBox(height: 24),
-
-                      /// Sections
-                      ...List.generate(
-                        (dayData?["sections"] as List?)?.length ?? 0,
-                        (index) {
-                          final section = dayData!["sections"][index];
-
-                          return Padding(
-                            padding: const EdgeInsets.only(bottom: 24),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                /// Heading
-                                Text(
-                                  section["heading"],
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.teal,
-                                  ),
-                                ),
-
-                                const SizedBox(height: 10),
-
-                                /// Content
-                                Text(
-                                  section["content"],
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    height: 1.7,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          );
-                        },
                       ),
                     ],
                   ),

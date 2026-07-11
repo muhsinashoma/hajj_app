@@ -186,21 +186,6 @@ class HajjTexts {
             return "Day of Tarwiyah — Literal Meaning: Provisioning Water; the day of preparation for the journey to Mina.";
         }
 
-      // case 9:
-      //   switch (lang) {
-      //     case bn:
-      //       return "৯ই জিলহজ্জ: আরাফাতে গমন ও সূর্যাস্ত পর্যন্ত অবস্থান (সূরা বাকারা ২: ১৯৮-১৯৯)।\n"
-      //           "৯ই জিলহজ্জ দিবাগত রাত (১০ই জিলহজ্জ): মুযদালিফায় আগমন ও অবস্থান (সূরা বাকারা ২: ১৯৮-১৯৯)।";
-
-      //     case ar:
-      //       return "٩ ذو الحجة: الوقوف بعرفة والإقامة فيها حتى غروب الشمس (سورة البقرة ٢: ١٩٨-١٩٩).\n"
-      //           "ليلة ٩ ذو الحجة (١٠ ذو الحجة): المبيت في مزدلفة.";
-
-      //     default:
-      //       return "9th Dhul Hijjah: Standing at Arafah and staying until sunset (Surah Al-Baqarah 2: 198–199).\n"
-      //           "Night of 9th Dhul Hijjah (10th Dhul Hijjah): Arrival and stay at Muzdalifah.";
-      //   }
-
       case 9:
         switch (lang) {
           case bn:
@@ -211,18 +196,6 @@ class HajjTexts {
             return "Day of Arafah — Literal Meaning: Knowing, Recognizing, and Realizing; it is the most important day of Hajj.";
         }
 
-      // case 10:
-      //   switch (lang) {
-      //     case bn:
-      //       return "সকালে মিনায় আগমন এবং মিনার কার্যক্রম (১.রমি, ২.হাদিয়া (কুরবানী) ৩.হলক/কসর ৪.ফরয তাওয়াফ/তাওয়াফে ইফাদাহ ৫.সাফা-মারওয়া সা'য়ী করা ৬.মিনাতে ফিরে অবস্থান ও আল্লাহর যিকির/স্মরণের মাধ্যমে হজ্জের সফলতা লাভের প্রচেষ্টা করা) (সূরা বাকারা ২: ২০০)।";
-
-      //     case ar:
-      //       return "الوصول إلى منى صباحًا وأعمال منى: رمي الجمرات، الهدي، الحلق/التقصير، طواف الإفاضة (سورة البقرة ٢: ٢٠٠).";
-
-      //     default:
-      //       return "Arrival at Mina in the morning and rituals of Mina: Rami (stoning), Hadi (sacrifice), Halq/Qasar (shaving/cutting hair), Tawaf-e-Ifadah (Surah Al-Baqarah 2: 200).";
-      //   }
-
       case 10:
         switch (lang) {
           case bn:
@@ -232,18 +205,6 @@ class HajjTexts {
           default:
             return "Day of Sacrifice (Yawm al-Nahr) — Literal Meaning: The Day of Slaughter and Sacrifice; it is the day of Eid al-Adha.";
         }
-
-      // case 11:
-      //   switch (lang) {
-      //     case bn:
-      //       return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং ছোট জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
-
-      //     case ar:
-      //       return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الصغرى (سورة البقرة ٢: ٢٠٣)";
-
-      //     default:
-      //       return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Small Jamarah (Surah Al-Baqarah 2: 203)";
-      //   }
 
       case 11:
         switch (lang) {
@@ -257,18 +218,6 @@ class HajjTexts {
             return "Ayyam al-Tashreeq (Days of Tashreeq) — Literal Meaning: Drying meat in the sun; the days when sacrificial meat was dried and preserved.";
         }
 
-      // case 12:
-      //   switch (lang) {
-      //     case bn:
-      //       return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং মাঝারি জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
-
-      //     case ar:
-      //       return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الوسطى (سورة البقرة ٢: ٢٠٣)";
-
-      //     default:
-      //       return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Middle Jamarah (Surah Al-Baqarah 2: 203)";
-      //   }
-
       case 12:
         switch (lang) {
           case bn:
@@ -280,18 +229,6 @@ class HajjTexts {
           default:
             return "Ayyam al-Tashreeq (Days of Tashreeq) — Literal Meaning: Drying meat in the sun; the days when sacrificial meat was dried and preserved.";
         }
-
-      // case 13:
-      //   switch (lang) {
-      //     case bn:
-      //       return "মিনায় অবস্থান, আল্লাহর যিকিরে মশগুল থাকা এবং বড় জামারাহ রমি করা (সূরা আল-বাকারা ২: ২০৩)";
-
-      //     case ar:
-      //       return "الإقامة في منى، والاشتغال بذكر الله، ورمي الجمرة الكبرى (نهاية أيام منى) (سورة البقرة ٢: ٢٠٣)";
-
-      //     default:
-      //       return "Staying in Mina, engaging in the remembrance of Allah, and performing Rami at the Big Jamarah (end of days in Mina) (Surah Al-Baqarah 2: 203)";
-      //   }
 
       case 13:
         switch (lang) {
