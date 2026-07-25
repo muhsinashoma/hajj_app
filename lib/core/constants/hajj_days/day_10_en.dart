@@ -198,7 +198,7 @@ Allah Ta'ala says—
 
 Meaning:
 
-"And when you have completed your rites, remember Allah as you remember your fathers or with much greater remembrance. And among the people is he who says, 'Our Lord, give us in this world,' and he will have in the Hereafter no share."
+"So when you have completed your rites [of Hajj], remember Allah as you remember your fathers or with a much greater remembrance. But among the people is he who says, 'Our Lord, give us in this world,' and he will have in the Hereafter no share."
 
 Allah Ta'ala further says—
 
@@ -208,7 +208,7 @@ Allah Ta'ala further says—
 
 Meaning:
 
-"But among them is he who says, 'Our Lord, give us good in this world and good in the Hereafter and protect us from the punishment of the Fire.'"
+"But among them is he who says, 'Our Lord, grant us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.'"
 
 Allah Ta'ala further says—
 
@@ -228,7 +228,7 @@ Allah Ta'ala further says—
 
 Meaning:
 
-"And remember Allah during specified days. Then whoever hastens [his departure] in two days - there is no sin upon him, and whoever delays [until the third] - there is no sin upon him, for him who fears Allah. And fear Allah and know that unto Him you will be gathered."
+"And remember Allah during the appointed days. Then whoever hastens his departure in two days - there is no sin upon him, and whoever delays - there is no sin upon him, for him who fears Allah. And fear Allah and know that unto Him you will be gathered."
 """
     },
     {
