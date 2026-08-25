@@ -9,11 +9,14 @@ class MenuItemModel {
   final String titleBn;
   final String titleAr;
   final String icon;
+  final int pageIndex; // NEW — which AppPages.* this item opens
+
 
   MenuItemModel({
     required this.titleEn,
     required this.titleBn,
     required this.titleAr,
     required this.icon,
+    required this.pageIndex, // NEW
   });
 }

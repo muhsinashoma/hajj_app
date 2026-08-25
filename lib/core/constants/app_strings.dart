@@ -6,6 +6,11 @@ class AppPages {
   static const int umrah = 2;
   static const int tenDays = 3;
   static const int hajjDay = 4;
+  static const int safar = 5;
+  static const int hajjPreparation = 6;
+  static const int essentials = 7;
+  static const int makkahActivities = 8;
+  static const int madinahActivities = 9;
 }
 
 class HajjTexts {

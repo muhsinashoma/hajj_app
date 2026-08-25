@@ -1,0 +1,9 @@
+
+Great, glad it's working now. To summarize what fixed it, for your own reference:
+
+main_screen.dart — a thin router: reads pageIndex from HajjCubit's state, picks the right content widget (SafarPage, HajjPage, etc.) via the switch, and wraps it in HomeScreen(child: page).
+home_screen.dart — the shared shell (app bar with dynamic title + language dropdown, bottom nav) that every page renders inside of. It was entirely commented out, which is why HomeScreen didn't exist as a real class — uncommenting it was the actual fix.
+app_bottom_nav.dart — now calls selectBottomTab(index), which updates both selectedIndex (highlight) and pageIndex (what main_screen.dart renders) together — this was the original missing link.
+menu_data.dart — each MenuItemModel now carries a pageIndex so the Cubit knows which page each tab opens.
+
+Add HajjPreparationPage, EssentialsPage, MakkahActivitiesPage, and MadinahActivitiesPage (real ones) whenever you're ready — just swap out their ComingSoonPage(title: "...") placeholders in main_screen.dart's switch for the real widget, same pattern as Safar. Let me know when you want to build any of those out and I'll follow the same content + wiring process we used for Safar.

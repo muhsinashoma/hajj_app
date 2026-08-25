@@ -23,6 +23,11 @@ import 'hajj_days/day_11_ar.dart';
 import 'hajj_days/day_12_ar.dart';
 import 'hajj_days/day_13_ar.dart';
 
+//Safar
+import 'hajj_days/safar.dart';
+import 'hajj_days/safar_en.dart';
+import 'hajj_days/safar_ar.dart';
+
 class HajjDayContent {
   static final Map<int, Map<String, dynamic>> bangla = {
     8: day8,
@@ -61,4 +66,21 @@ class HajjDayContent {
         return english;
     }
   }
-}
+
+  static final Map<String, Map<String, dynamic>> safarContent = {
+    "bn": safar,
+    "en": safarEn,
+    "ar": safarAr,
+  };
+
+  static Map<String, dynamic> getSafarData(String lang) {
+    switch (lang) {
+      case "ar":
+        return safarAr;
+      case "en":
+        return safarEn;
+      default:
+        return safar;
+    }
+  }
+} // end of class HajjDayContent
