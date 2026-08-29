@@ -33,9 +33,10 @@ import 'hajj_days/hajj_preparation.dart';
 import 'hajj_days/hajj_preparation_en.dart';
 import 'hajj_days/hajj_preparation_ar.dart';
 
-// TODO: Essentials — create hajj_days/essentials.dart,
-// essentials_en.dart, essentials_ar.dart, then import here
-// and replace the placeholder maps below.
+//Essentials
+import 'hajj_days/essentials.dart';
+import 'hajj_days/essentials_en.dart';
+import 'hajj_days/essentials_ar.dart';
 
 // TODO: Makkah Activities — create hajj_days/makkah_activities.dart,
 // makkah_activities_en.dart, makkah_activities_ar.dart, then import
@@ -122,20 +123,24 @@ class HajjDayContent {
     }
   }
 
-  // ================= ESSENTIALS (placeholder — content pending) =================
+// ================= ESSENTIALS =================
 
-  static const Map<String, dynamic> _essentialsPlaceholder = {
-    "title": "প্রয়োজনীয় জিনিস",
-    "subtitle": null,
-    "sections": <Map<String, dynamic>>[],
+  static final Map<String, Map<String, dynamic>> essentialsContent = {
+    "bn": essentials,
+    "en": essentialsEn,
+    "ar": essentialsAr,
   };
 
   static Map<String, dynamic> getEssentialsData(String lang) {
-    // Swap in real bn/en/ar maps here once essentials.dart,
-    // essentials_en.dart, essentials_ar.dart are created.
-    return _essentialsPlaceholder;
+    switch (lang) {
+      case "ar":
+        return essentialsAr;
+      case "en":
+        return essentialsEn;
+      default:
+        return essentials;
+    }
   }
-
   // ================= MAKKAH ACTIVITIES (placeholder — content pending) =================
 
   static const Map<String, dynamic> _makkahActivitiesPlaceholder = {

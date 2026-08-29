@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hajj_app/core/constants/app_strings.dart';
 
 import '../../widgets/home_body.dart';
+import 'essentials_page.dart';
 import 'hajj_preparation_page.dart';
 import 'home_screen.dart';
 import 'hajj_page.dart';
@@ -46,8 +47,11 @@ class MainScreen extends StatelessWidget {
           case AppPages.hajjPreparation:
             page = const HajjPreparationPage();
             break;
+          // case AppPages.essentials:
+          //   page = const ComingSoonPage(title: "Essentials");
+          //   break;
           case AppPages.essentials:
-            page = const ComingSoonPage(title: "Essentials");
+            page = const EssentialsPage();
             break;
           case AppPages.makkahActivities:
             page = const ComingSoonPage(title: "Makkah Activities");
