@@ -4,8 +4,6 @@
 
 // 📍 features/hajj/data/data_sources/menu_data.dart
 
-
-
 // lib/features/hajj/data/data_sources/menu_data.dart
 
 import 'package:hajj_app/core/constants/app_strings.dart';
@@ -41,6 +39,13 @@ class MenuData {
 
   // BOTTOM MENU
   static List<MenuItemModel> bottomMenu = [
+    MenuItemModel(
+      titleEn: "Home",
+      titleBn: "হোম",
+      titleAr: "الرئيسية",
+      icon: "🏠",
+      pageIndex: AppPages.home, // NEW — first tab
+    ),
     MenuItemModel(
       titleEn: "Safar",
       titleBn: "সফর",

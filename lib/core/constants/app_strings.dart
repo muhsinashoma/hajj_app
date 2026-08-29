@@ -169,16 +169,6 @@ class HajjTexts {
   // ================= DAY SUMMARY =================
   static String hajjDaySummary(String lang, int day) {
     switch (day) {
-      // case 8:
-      //   switch (lang) {
-      //     case bn:
-      //       return "১. ইহরাম অবস্থায় মক্কা বা হারাম এলাকার নিজ অবস্থান থেকে মিনার উদ্দেশ্যে রওনা হওয়া। ২. মিনায় গমন ও অবস্থান।";
-      //     case ar:
-      //       return "١. في حالة الإحرام، توجه إلى منى من موقعك داخل مكة المكرمة أو منطقة الحرم. ٢. سافر إلى منى وأقم هناك.";
-      //     default:
-      //       return "1. In the state of Ihram, proceed towards Mina from your location within Makkah or the Haram area. 2.Travel to Mina and stay there.";
-      //   }
-
       case 8:
         switch (lang) {
           case bn:
