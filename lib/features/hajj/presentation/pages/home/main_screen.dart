@@ -13,6 +13,9 @@ import 'ten_days_zil_hajj.dart';
 import 'hajj_day_activities_page.dart';
 import 'safar_page.dart';
 import 'coming_soon_page.dart';
+//import 'makkah_activities.dart';
+import 'makkah_activities_page.dart';
+import 'madinah_activities_page.dart';
 
 import '../../cubit/hajj/hajj_cubit.dart';
 import '../../cubit/hajj/hajj_state.dart';
@@ -47,18 +50,19 @@ class MainScreen extends StatelessWidget {
           case AppPages.hajjPreparation:
             page = const HajjPreparationPage();
             break;
-          // case AppPages.essentials:
-          //   page = const ComingSoonPage(title: "Essentials");
-          //   break;
           case AppPages.essentials:
             page = const EssentialsPage();
             break;
           case AppPages.makkahActivities:
-            page = const ComingSoonPage(title: "Makkah Activities");
+            //page = const ComingSoonPage(title: "Makkah Activities");
+            //break;
+            page = const MakkahActivitiesPage();
             break;
+
           case AppPages.madinahActivities:
-            page = const ComingSoonPage(title: "Madinah Activities");
+            page = const MadinahActivitiesPage();
             break;
+
           default:
             page = const HomeBody();
         }

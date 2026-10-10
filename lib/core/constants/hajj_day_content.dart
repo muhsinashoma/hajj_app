@@ -37,6 +37,17 @@ import 'hajj_days/hajj_preparation_ar.dart';
 import 'hajj_days/essentials.dart';
 import 'hajj_days/essentials_en.dart';
 import 'hajj_days/essentials_ar.dart';
+//Makkah Activities
+// import 'hajj_days/makkah_madinah_activities.dart';
+// import 'hajj_days/makkah_madinah_activities_en.dart';
+// import 'hajj_days/makkah_madinah_activities_ar.dart';
+
+import 'hajj_days/makkah_activities.dart';
+import 'hajj_days/makkah_activities_en.dart';
+import 'hajj_days/makkah_activities_ar.dart';
+import 'hajj_days/madinah_activities.dart';
+import 'hajj_days/madinah_activities_en.dart';
+import 'hajj_days/madinah_activities_ar.dart';
 
 // TODO: Makkah Activities — create hajj_days/makkah_activities.dart,
 // makkah_activities_en.dart, makkah_activities_ar.dart, then import
@@ -141,31 +152,34 @@ class HajjDayContent {
         return essentials;
     }
   }
-  // ================= MAKKAH ACTIVITIES (placeholder — content pending) =================
+ 
+ 
 
-  static const Map<String, dynamic> _makkahActivitiesPlaceholder = {
-    "title": "মক্কার কার্যক্রম",
-    "subtitle": null,
-    "sections": <Map<String, dynamic>>[],
-  };
-
+    // ================= MAKKAH ACTIVITIES =================
   static Map<String, dynamic> getMakkahActivitiesData(String lang) {
-    // Swap in real bn/en/ar maps here once makkah_activities.dart,
-    // makkah_activities_en.dart, makkah_activities_ar.dart are created.
-    return _makkahActivitiesPlaceholder;
+    switch (lang) {
+      case "ar":
+        return makkahActivitiesAr;
+      case "en":
+        return makkahActivitiesEn;
+      default:
+        return makkahActivities;
+    }
   }
 
-  // ================= MADINAH ACTIVITIES (placeholder — content pending) =================
 
-  static const Map<String, dynamic> _madinahActivitiesPlaceholder = {
-    "title": "মদিনার কার্যক্রম",
-    "subtitle": null,
-    "sections": <Map<String, dynamic>>[],
-  };
-
+  // ================= MADINAH ACTIVITIES =================
   static Map<String, dynamic> getMadinahActivitiesData(String lang) {
-    // Swap in real bn/en/ar maps here once madinah_activities.dart,
-    // madinah_activities_en.dart, madinah_activities_ar.dart are created.
-    return _madinahActivitiesPlaceholder;
+    switch (lang) {
+      case "ar":
+        return madinahActivitiesAr;
+      case "en":
+        return madinahActivitiesEn;
+      default:
+        return madinahActivities;
+    }
   }
+
+ 
+
 } // end of class HajjDayContent
